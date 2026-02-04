@@ -2,31 +2,77 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>我的小网站</title>
+  <title>沉默执手的网址收藏</title>
   <style>
     body {
-      font-family: Arial, "PingFang SC", "Microsoft YaHei";
-      background: #f5f7fa;
-      text-align: center;
-      padding-top: 100px;
+      font-family: Arial, sans-serif;
+      background: #f5f6fa;
+      margin: 0;
+      padding: 20px;
     }
-    h1 { color: #333; }
-    p { color: #666; }
-    .box {
-      background: #fff;
-      width: 360px;
-      margin: auto;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.1);
+
+    h1 {
+      text-align: center;
+    }
+
+    .category {
+      margin: 30px 0;
+    }
+
+    .category h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .link-card {
+      background: #ffffff;
+      padding: 12px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
+
+    .link-card:hover {
+      background: #4f46e5;
+      color: #fff;
+      transform: translateY(-2px);
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>你好 👋</h1>
-    <p>这是我用 GitHub Pages 搭建的第一个网站</p>
-    <p>以后我会慢慢把它变成一个实用的小工具</p>
+
+<h1>📌 我的网址管理 / 收藏页</h1>
+
+<div class="category">
+  <h2>🛠 工具</h2>
+  <div class="links">
+    <a class="link-card" href="https://github.com" target="_blank">GitHub</a>
+    <a class="link-card" href="https://chat.openai.com" target="_blank">ChatGPT</a>
   </div>
+</div>
+
+<div class="category">
+  <h2>🤖 AI</h2>
+  <div class="links">
+    <a class="link-card" href="https://midjourney.com" target="_blank">Midjourney</a>
+    <a class="link-card" href="https://notion.so" target="_blank">Notion</a>
+  </div>
+</div>
+
+<div class="category">
+  <h2>📚 学习</h2>
+  <div class="links">
+    <a class="link-card" href="https://zhihu.com" target="_blank">知乎</a>
+  </div>
+</div>
+
 </body>
 </html>
